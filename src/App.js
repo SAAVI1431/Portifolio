@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Ed from './EducationDetails/Ed';
+import About from './About/About';
+import {TabView, TabPanel} from 'primereact/tabview';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
+  // let img1="public\SiteAssets\background-img.jpg";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='homeContainer' style={{backgroundImage: 'url("public/SiteAssets/background-img.png")'}}>
+    <div className='home__bg-image'>
+    <div className="card">
+      <TabView>
+        <TabPanel header="About" headerStyle={{padding:"1rem",background:"blue", borderRadius:"5px", margin:"1rem"}}><About/></TabPanel>
+        <TabPanel header="Education Details" headerStyle={{padding:"1rem",background:"blue",borderRadius:"5px", margin:"1rem"}}><Ed/></TabPanel>
+      </TabView>
+      {/* <img className='homeImg' src='public/SiteAssets/background-img.jpg' alt='' /> */}
     </div>
+    
+    </div>
+    </div>
+    </>
   );
 }
 

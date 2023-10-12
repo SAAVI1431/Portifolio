@@ -13,6 +13,29 @@
   }
 }
 
+.homeContainer{
+  height:100%;
+  display: flex;
+}
+
+.homeImg{
+  object-fit:cover;
+  width:100%
+  }
+  .home__bg-image{
+  margin: 0 auto;
+  display:flex;
+  width:100%;
+  position:relative;
+  justify-content: center;
+  }
+/* .card{
+  background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+} */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
